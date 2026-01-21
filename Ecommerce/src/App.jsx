@@ -1,6 +1,8 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { Search, ShoppingCart, Heart, Menu, User, Star, Plus, Minus, Trash2, MapPin, CreditCard, Package, LogOut, Eye, EyeOff, House, ChevronLeft, ChevronRight } from 'lucide-react';
 import api from './api/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
 
 const AppContext = createContext();
 // Context for global state
